@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 public class BMSUtil {
 
 	public static List<Integer> createSeq(int startVal, int endVal, int step) {
-		return IntStream.iterate(startVal, d -> d <= endVal, d -> d + step).boxed().collect(Collectors.toList());
+		return IntStream.iterate(startVal, i -> i + step).limit(endVal).boxed().collect(Collectors.toList());
 	}
 
 	public static List<Integer> createTempSeq(int startVal, int endVal, int step) {
