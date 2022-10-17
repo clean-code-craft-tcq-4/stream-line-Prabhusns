@@ -18,3 +18,10 @@ jobs:
         cd src
         javac Main.java
         java -ea Main
+        
+    - name: build Receiver
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testcheckerReceiver Receiver/*.c*
+      
+    - name: run Receiver
+      run: ./testcheckerReceiver       
+    
