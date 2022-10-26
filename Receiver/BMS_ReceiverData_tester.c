@@ -8,6 +8,6 @@ int sampleValue1[5] = {1,2,3,4,5};
 
 int main(void) {
 
-  ReadBatteryParameter(0,5,temperature,ChargeRate);
-  Calculate_Avg(temperature,ChargeRate);
+  ReadBatteryParameter(0,5,sampleValue,sampleValue1);
+  Calculate_Avg(sampleValue,sampleValue1);
 }
