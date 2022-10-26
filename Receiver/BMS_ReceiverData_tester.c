@@ -8,7 +8,7 @@
 
 int main(void) {
 
-printf("temperature = %f, SOC = %f, ChargeRate = %f\n", temperature, SOC, ChargeRate);	
+
 //	ReadBatteryParameter(0,5,sampleValue,sampleValue1);
 //  Calculate_Avg(sampleValue,sampleValue1);
 }
