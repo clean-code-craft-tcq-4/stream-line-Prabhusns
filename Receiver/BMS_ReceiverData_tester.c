@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <stdio.h>
 #include "BMS_SensorData_Receiver.h"
 
 //int sampleValue[5] = {1,2,3,4,5};
