@@ -8,7 +8,7 @@
 
 int main(void) {
 
-
-//	ReadBatteryParameter(0,5,sampleValue,sampleValue1);
-//  Calculate_Avg(sampleValue,sampleValue1);
+  scanf("%f%c%f%c%f", temperature, &dummy, SOC, &dummy, ChargeRate);
+  ReadBatteryParameter(0,5,temperature,ChargeRate);
+  Calculate_Avg(temperature,ChargeRate);
 }
