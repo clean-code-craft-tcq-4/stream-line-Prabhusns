@@ -13,16 +13,6 @@ long sum = 0;
 int len = sizeof(arrNumbers) / sizeof(int);
 int count = sizeof(ReadBatteryTemp) / sizeof(int);
 
-void ReadParameters(float* temperature, float* SOC, float* ChargeRate)
-{
-  char dummy;
-  scanf("%f%c%f%c%f", temperature, &dummy, SOC, &dummy, ChargeRate);
-}
-
-void ReadFromConsoleInput(float* temperature, float* SOC, float* ChargeRate)
-{
-  ReadParameters(temperature, SOC, ChargeRate);
-}
 
 void ReadBatteryParameter(int min,int max,int *ReadBatteryTemp,int *ReadBatterySoc)
 {
